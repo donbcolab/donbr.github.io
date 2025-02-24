@@ -172,7 +172,7 @@ const GdeltRecordViewer = () => {
 
   // Load records from the JSON file.
   useEffect(() => {
-    fetch("/assets/js/gdelt-gkg.json")
+    fetch("/data/gdelt-gkg.json")
       .then((res) => res.json())
       .then((data) => {
         setRecords(data);

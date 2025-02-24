@@ -1,0 +1,40 @@
+{
+  "name": "donbr-github-io",
+  "version": "1.0.0",
+  "description": "Don Branson's portfolio website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,html,css}'"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "postcss": "^8.5.3",
+    "prettier": "^3.5.2",
+    "tailwindcss": "^4.0.8",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.1",
+    "cross-env": "^7.0.3",
+    "gh-pages": "^6.3.0" 
+  },
+  "dependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.25.9",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.2.0",
+    "@huggingface/transformers": "^3.3.3",
+    "@xenova/transformers": "^2.17.2",
+    "chart.js": "^4.3.0",
+    "prismjs": "^1.29.0"
+  }
+}

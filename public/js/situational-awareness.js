@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async function() {
     // Load the graph data
-    const response = await fetch('/assets/js/situational-awareness-graph.json');
+    const response = await fetch('/data/situational-awareness-graph.json');
     const graphData = await response.json();
 
     // Convert nodes and edges to ECharts format

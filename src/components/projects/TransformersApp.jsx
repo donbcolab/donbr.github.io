@@ -1,27 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+import React, { useEffect } from "react";
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="author" content="Xenova" />
-  <title>Transformers.js</title>
-  <meta name="description"
-    content="State-of-the-art Machine Learning for the web. Run 🤗 Transformers directly in your browser, with no need for a server!" />
+function TransformersApp() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "/main.js"; // Assuming main.js contains the core logic
+    script.async = true;
+    document.body.appendChild(script);
 
-  <!-- Favicon-->
-  <!-- Icon made by Freepik (https://www.flaticon.com/free-icons/robot) -->
-  <link rel="icon" type="image/x-icon" href="./icons/favicon.ico" />
+    return () => {
+      document.body.removeChild(script);
+    };
+  },);
 
-  <!-- Bootstrap icons-->
-  <link href="./theme.css" rel="stylesheet" />
-  <link href="./css/bootstrap-icons.css" rel="stylesheet" />
-
-  <!-- Page JS-->
-  <script type="module" src="/main.js" defer></script>
-</head>
-
-<body>
+  return (
   <div id="app">
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -595,6 +586,7 @@ let pipe = await pipeline('sentiment-analysis', 'nlptown/bert-base-multilingual-
     </footer>
 
   </div>
-</body>
+  );
+}
 
-</html>
+export default TransformersApp;

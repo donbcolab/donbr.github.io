@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   let networkData;
   
   try {
-    const response = await fetch('/assets/js/string.cyjs');
+    const response = await fetch('/data/string.cyjs');
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
